@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsHomework
 {
-    public partial class Hello : Form, IPanel
+    public partial class Hello : MyForm
     {
         private string constellation;
         private string englishName;
@@ -17,13 +17,7 @@ namespace WindowsFormsHomework
             InitializeComponent();
         }
 
-        public void Open(Form mdiParent, Control parent, Action onOpen)
-        {
-            MdiParent = mdiParent; //設定窗體的父子關係
-            Parent = parent; //設定子窗體的容器為父窗體中的Panel
-            onOpen?.Invoke();
-            Show();
-        }
+     
 
         private void SayHelloButton_Click(object sender, EventArgs e)
         {
