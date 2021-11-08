@@ -17,7 +17,6 @@ namespace WindowsFormsHomework
             InitializeComponent();
         }
 
-     
 
         private void SayHelloButton_Click(object sender, EventArgs e)
         {

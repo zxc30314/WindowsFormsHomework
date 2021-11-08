@@ -23,6 +23,11 @@ namespace WindowsFormsHomework
             FactoryPanel(new Loan());
         }
 
+        private void PosButton_Click(object sender, EventArgs e)
+        {
+            FactoryPanel(new Pos());
+        }
+
         private void FactoryPanel(IPanel panel)
         {
             panel.Open(this, splitContainer1.Panel2, CloseWindows);
@@ -35,6 +40,7 @@ namespace WindowsFormsHomework
             {
                 i.Close();
             }
+            windowsChildren.Clear();
         }
     }
 
