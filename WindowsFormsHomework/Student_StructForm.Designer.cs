@@ -34,18 +34,18 @@ namespace WindowsFormsHomework
             this.englishLabel = new System.Windows.Forms.Label();
             this.chineseLabel = new System.Windows.Forms.Label();
             this.englishTextBox = new System.Windows.Forms.TextBox();
-            this.methTextBox = new System.Windows.Forms.TextBox();
+            this.mathTextBox = new System.Windows.Forms.TextBox();
             this.chineseTextBox = new System.Windows.Forms.TextBox();
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.highestLabel = new System.Windows.Forms.Label();
-            this.lowLabel = new System.Windows.Forms.Label();
+            this.lowestLabel = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.nameLabel = new System.Windows.Forms.Label();
             this.chineseScoreLabel = new System.Windows.Forms.Label();
             this.englishScoreLabel = new System.Windows.Forms.Label();
-            this.methScoreLabel = new System.Windows.Forms.Label();
+            this.mathScoreLabel = new System.Windows.Forms.Label();
             this.displayButton = new System.Windows.Forms.Button();
             this.keepButton = new System.Windows.Forms.Button();
             this.highestLowestButton = new System.Windows.Forms.Button();
@@ -102,13 +102,13 @@ namespace WindowsFormsHomework
             this.englishTextBox.Size = new System.Drawing.Size(175, 40);
             this.englishTextBox.TabIndex = 15;
             // 
-            // methTextBox
+            // mathTextBox
             // 
-            this.methTextBox.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.methTextBox.Location = new System.Drawing.Point(165, 255);
-            this.methTextBox.Name = "methTextBox";
-            this.methTextBox.Size = new System.Drawing.Size(175, 40);
-            this.methTextBox.TabIndex = 16;
+            this.mathTextBox.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.mathTextBox.Location = new System.Drawing.Point(165, 255);
+            this.mathTextBox.Name = "mathTextBox";
+            this.mathTextBox.Size = new System.Drawing.Size(175, 40);
+            this.mathTextBox.TabIndex = 16;
             // 
             // chineseTextBox
             // 
@@ -130,9 +130,9 @@ namespace WindowsFormsHomework
             // 
             this.groupBox1.Controls.Add(this.flowLayoutPanel2);
             this.groupBox1.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.groupBox1.Location = new System.Drawing.Point(500, 39);
+            this.groupBox1.Location = new System.Drawing.Point(455, 39);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(278, 337);
+            this.groupBox1.Size = new System.Drawing.Size(323, 337);
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "成績";
@@ -141,11 +141,12 @@ namespace WindowsFormsHomework
             // 
             this.flowLayoutPanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutPanel2.Controls.Add(this.highestLabel);
-            this.flowLayoutPanel2.Controls.Add(this.lowLabel);
+            this.flowLayoutPanel2.Controls.Add(this.lowestLabel);
+            this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel2.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 241);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(238, 96);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(323, 96);
             this.flowLayoutPanel2.TabIndex = 20;
             // 
             // highestLabel
@@ -159,16 +160,16 @@ namespace WindowsFormsHomework
             this.highestLabel.TabIndex = 20;
             this.highestLabel.Text = "最高科目成績為：";
             // 
-            // lowLabel
+            // lowestLabel
             // 
-            this.lowLabel.AutoSize = true;
-            this.lowLabel.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lowLabel.Location = new System.Drawing.Point(3, 22);
-            this.lowLabel.Name = "lowLabel";
-            this.lowLabel.Padding = new System.Windows.Forms.Padding(3);
-            this.lowLabel.Size = new System.Drawing.Size(142, 22);
-            this.lowLabel.TabIndex = 21;
-            this.lowLabel.Text = "最低科目成績為：";
+            this.lowestLabel.AutoSize = true;
+            this.lowestLabel.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lowestLabel.Location = new System.Drawing.Point(3, 22);
+            this.lowestLabel.Name = "lowestLabel";
+            this.lowestLabel.Padding = new System.Windows.Forms.Padding(3);
+            this.lowestLabel.Size = new System.Drawing.Size(142, 22);
+            this.lowestLabel.TabIndex = 21;
+            this.lowestLabel.Text = "最低科目成績為：";
             // 
             // flowLayoutPanel1
             // 
@@ -176,12 +177,12 @@ namespace WindowsFormsHomework
             this.flowLayoutPanel1.Controls.Add(this.nameLabel);
             this.flowLayoutPanel1.Controls.Add(this.chineseScoreLabel);
             this.flowLayoutPanel1.Controls.Add(this.englishScoreLabel);
-            this.flowLayoutPanel1.Controls.Add(this.methScoreLabel);
+            this.flowLayoutPanel1.Controls.Add(this.mathScoreLabel);
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel1.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(500, 78);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(455, 78);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(238, 196);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(323, 196);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // nameLabel
@@ -217,31 +218,32 @@ namespace WindowsFormsHomework
             this.englishScoreLabel.TabIndex = 20;
             this.englishScoreLabel.Text = "英文：";
             // 
-            // methScoreLabel
+            // mathScoreLabel
             // 
-            this.methScoreLabel.AutoSize = true;
-            this.methScoreLabel.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.methScoreLabel.Location = new System.Drawing.Point(3, 66);
-            this.methScoreLabel.Name = "methScoreLabel";
-            this.methScoreLabel.Padding = new System.Windows.Forms.Padding(3);
-            this.methScoreLabel.Size = new System.Drawing.Size(62, 22);
-            this.methScoreLabel.TabIndex = 20;
-            this.methScoreLabel.Text = "數學：";
+            this.mathScoreLabel.AutoSize = true;
+            this.mathScoreLabel.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.mathScoreLabel.Location = new System.Drawing.Point(3, 66);
+            this.mathScoreLabel.Name = "mathScoreLabel";
+            this.mathScoreLabel.Padding = new System.Windows.Forms.Padding(3);
+            this.mathScoreLabel.Size = new System.Drawing.Size(62, 22);
+            this.mathScoreLabel.TabIndex = 20;
+            this.mathScoreLabel.Text = "數學：";
             // 
             // displayButton
             // 
             this.displayButton.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.displayButton.Location = new System.Drawing.Point(273, 334);
+            this.displayButton.Location = new System.Drawing.Point(250, 334);
             this.displayButton.Name = "displayButton";
             this.displayButton.Size = new System.Drawing.Size(187, 42);
             this.displayButton.TabIndex = 21;
             this.displayButton.Text = "顯示儲存內容";
             this.displayButton.UseVisualStyleBackColor = true;
+            this.displayButton.Click += new System.EventHandler(this.displayButton_Click);
             // 
             // keepButton
             // 
             this.keepButton.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.keepButton.Location = new System.Drawing.Point(56, 334);
+            this.keepButton.Location = new System.Drawing.Point(34, 334);
             this.keepButton.Name = "keepButton";
             this.keepButton.Size = new System.Drawing.Size(187, 42);
             this.keepButton.TabIndex = 23;
@@ -258,6 +260,7 @@ namespace WindowsFormsHomework
             this.highestLowestButton.TabIndex = 24;
             this.highestLowestButton.Text = "最高分/最低分科目";
             this.highestLowestButton.UseVisualStyleBackColor = true;
+            this.highestLowestButton.Click += new System.EventHandler(this.highestLowestButton_Click);
             // 
             // Student_StructForm
             // 
@@ -271,7 +274,7 @@ namespace WindowsFormsHomework
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.nameTextBox);
             this.Controls.Add(this.chineseTextBox);
-            this.Controls.Add(this.methTextBox);
+            this.Controls.Add(this.mathTextBox);
             this.Controls.Add(this.englishTextBox);
             this.Controls.Add(this.chineseLabel);
             this.Controls.Add(this.englishLabel);
@@ -296,7 +299,7 @@ namespace WindowsFormsHomework
         private System.Windows.Forms.Label englishLabel;
         private System.Windows.Forms.Label chineseLabel;
         private System.Windows.Forms.TextBox englishTextBox;
-        private System.Windows.Forms.TextBox methTextBox;
+        private System.Windows.Forms.TextBox mathTextBox;
         private System.Windows.Forms.TextBox chineseTextBox;
         private System.Windows.Forms.TextBox nameTextBox;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -306,8 +309,8 @@ namespace WindowsFormsHomework
         private System.Windows.Forms.Label nameLabel;
         private System.Windows.Forms.Label chineseScoreLabel;
         private System.Windows.Forms.Label englishScoreLabel;
-        private System.Windows.Forms.Label methScoreLabel;
-        private System.Windows.Forms.Label lowLabel;
+        private System.Windows.Forms.Label mathScoreLabel;
+        private System.Windows.Forms.Label lowestLabel;
         private System.Windows.Forms.Button displayButton;
         private System.Windows.Forms.Button keepButton;
         private System.Windows.Forms.Button highestLowestButton;

@@ -14,7 +14,7 @@ namespace WindowsFormsHomework
     {
         private readonly Menu wine, Tequila, whisky, beer;
 
-        private string wineShow, tequilaShow, whiskyShow, beerShow;
+        private string wineShow = "", tequilaShow, whiskyShow, beerShow;
         private readonly string caption = "確認付款";
 
         public Pos()
@@ -26,37 +26,37 @@ namespace WindowsFormsHomework
             beer = new Menu(0, 120);
         }
 
-
-
         private void wineButton_Click(object sender, EventArgs e)
         {
-           
-            //Keep(wine);
+            wine.count++;
             wine.price = wine.count * wine.unitprice;
             wineShow = "紅酒x" + wine.count + "," + "共NT$" + wine.price + "元" + "\n";
-
-            //list();
-
             listLabel.Text = wineShow + tequilaShow + whiskyShow + beerShow;
         }
 
-
-
         /*private void list()
         {
-            if (!listBox1.Items.Contains(wineShow))
+
+            if (listBox1.Items.IndexOf(wineShow) == -1)
             {
                 wine.count++;
+                wine.price = wine.count * wine.unitprice;
+                wineShow = "紅酒x" + wine.count + "," + "共NT$" + wine.price + "元" + "\n";
                 listBox1.Items.Add(wineShow);
             }
-            else if (listBox1.Items.Contains(wineShow))
+
+
+            else if (listBox1.Items.IndexOf(wineShow) != -1)
             {
                 int index = listBox1.Items.IndexOf(wineShow);
                 wine.count++;
+                wine.price = wine.count * wine.unitprice;
+                wineShow = "紅酒x" + wine.count + "," + "共NT$" + wine.price + "元" + "\n";
                 listBox1.Items.Insert(index, wineShow);
-                listBox1.Items.RemoveAt(index+1);
+                listBox1.Items.RemoveAt(index + 1);
             }
         }*/
+
         private void tequilaButton_Click(object sender, EventArgs e)
         {
             Tequila.count++;
@@ -76,20 +76,13 @@ namespace WindowsFormsHomework
 
         private void beerButton_Click(object sender, EventArgs e)
         {
-            Compute(beer.count, beer.unitprice,beer.price);
-            //beer.count++;
-            //beer.price = beer.count * beer.unitprice;
+            beer.count++;
+            beer.price = beer.count * beer.unitprice;
             beerShow = "啤酒x" + beer.count + "," + "共NT$" + beer.price + "元";
 
             listLabel.Text = wineShow + tequilaShow + whiskyShow + beerShow;
         }
 
-        private int Compute(int count, int unitprice,int price)
-        {
-            count++;
-            price = count * unitprice;
-            return price;
-        }
         private void clearButton_Click(object sender, EventArgs e)
         {
             listLabel.Text = "尚未點餐";
@@ -114,17 +107,9 @@ namespace WindowsFormsHomework
             }
             else MessageBox.Show("尚未點餐", caption, MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
         }
-
-        /*private void Keep(ICompute icompute)
-        {
-            icompute.Count(count, unitprice);
-        }*/
     }
-    /*internal interface ICompute
-    {
-        void Count(int count, int unitprice);
-    }*/
-    public class Menu //: ICompute
+
+    public class Menu
     {
         public int count;
         public int unitprice;
@@ -135,10 +120,5 @@ namespace WindowsFormsHomework
             this.count = count;
             this.unitprice = unitprice;
         }
-
-        /*public void Count(int count, int unitprice)
-        {
-            price = count * unitprice;
-        }*/
     }
 }

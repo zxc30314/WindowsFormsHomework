@@ -7,7 +7,6 @@ namespace WindowsFormsHomework
     public partial class HomePage : Form
     {
         private readonly List<IPanel> windowsChildren = new List<IPanel>();
-
         public HomePage()
         {
             InitializeComponent();
@@ -28,12 +27,21 @@ namespace WindowsFormsHomework
             FactoryPanel(new Pos());
         }
 
+        private void Student_StructFormButton_Click(object sender, EventArgs e)
+        {
+            FactoryPanel(new Student_StructForm());
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FactoryPanel(new StudentsGrade());
+        }
+
         private void FactoryPanel(IPanel panel)
         {
             panel.Open(this, splitContainer1.Panel2, CloseWindows);
             windowsChildren.Add(panel);
         }
-
         private void CloseWindows()
         {
             foreach (var i in windowsChildren)
