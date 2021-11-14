@@ -32,10 +32,10 @@ namespace WindowsFormsHomework
             this.loanButton = new System.Windows.Forms.Button();
             this.helloButton = new System.Windows.Forms.Button();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.PosButton = new System.Windows.Forms.Button();
-            this.Student_StructFormButton = new System.Windows.Forms.Button();
+            this.studentsGradeButton = new System.Windows.Forms.Button();
+            this.student_StructFormButton = new System.Windows.Forms.Button();
+            this.posButton = new System.Windows.Forms.Button();
             this.bubblePicture = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -79,9 +79,9 @@ namespace WindowsFormsHomework
             this.splitContainer1.Panel1.AutoScroll = true;
             this.splitContainer1.Panel1.BackgroundImage = global::WindowsFormsHomework.Properties.Resources.pngtree_chinese_style_antiquity_ink_background_picture_image_953480;
             this.splitContainer1.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.splitContainer1.Panel1.Controls.Add(this.button1);
-            this.splitContainer1.Panel1.Controls.Add(this.Student_StructFormButton);
-            this.splitContainer1.Panel1.Controls.Add(this.PosButton);
+            this.splitContainer1.Panel1.Controls.Add(this.studentsGradeButton);
+            this.splitContainer1.Panel1.Controls.Add(this.student_StructFormButton);
+            this.splitContainer1.Panel1.Controls.Add(this.posButton);
             this.splitContainer1.Panel1.Controls.Add(this.helloButton);
             this.splitContainer1.Panel1.Controls.Add(this.loanButton);
             // 
@@ -94,31 +94,44 @@ namespace WindowsFormsHomework
             this.splitContainer1.SplitterDistance = 253;
             this.splitContainer1.TabIndex = 25;
             // 
-            // PosButton
+            // studentsGradeButton
             // 
-            this.PosButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.studentsGradeButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.PosButton.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.PosButton.Location = new System.Drawing.Point(24, 82);
-            this.PosButton.Name = "PosButton";
-            this.PosButton.Size = new System.Drawing.Size(212, 23);
-            this.PosButton.TabIndex = 2;
-            this.PosButton.Text = "Pos";
-            this.PosButton.UseVisualStyleBackColor = true;
-            this.PosButton.Click += new System.EventHandler(this.PosButton_Click);
+            this.studentsGradeButton.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.studentsGradeButton.Location = new System.Drawing.Point(24, 140);
+            this.studentsGradeButton.Name = "studentsGradeButton";
+            this.studentsGradeButton.Size = new System.Drawing.Size(212, 23);
+            this.studentsGradeButton.TabIndex = 4;
+            this.studentsGradeButton.Text = "StudentsGrade";
+            this.studentsGradeButton.UseVisualStyleBackColor = true;
+            this.studentsGradeButton.Click += new System.EventHandler(this.studentsGradeButton_Click);
             // 
-            // Student_StructFormButton
+            // student_StructFormButton
             // 
-            this.Student_StructFormButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.student_StructFormButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Student_StructFormButton.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.Student_StructFormButton.Location = new System.Drawing.Point(24, 111);
-            this.Student_StructFormButton.Name = "Student_StructFormButton";
-            this.Student_StructFormButton.Size = new System.Drawing.Size(212, 23);
-            this.Student_StructFormButton.TabIndex = 3;
-            this.Student_StructFormButton.Text = "Student_StructForm";
-            this.Student_StructFormButton.UseVisualStyleBackColor = true;
-            this.Student_StructFormButton.Click += new System.EventHandler(this.Student_StructFormButton_Click);
+            this.student_StructFormButton.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.student_StructFormButton.Location = new System.Drawing.Point(24, 111);
+            this.student_StructFormButton.Name = "student_StructFormButton";
+            this.student_StructFormButton.Size = new System.Drawing.Size(212, 23);
+            this.student_StructFormButton.TabIndex = 3;
+            this.student_StructFormButton.Text = "Student_StructForm";
+            this.student_StructFormButton.UseVisualStyleBackColor = true;
+            this.student_StructFormButton.Click += new System.EventHandler(this.student_StructFormButton_Click);
+            // 
+            // posButton
+            // 
+            this.posButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.posButton.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.posButton.Location = new System.Drawing.Point(24, 82);
+            this.posButton.Name = "posButton";
+            this.posButton.Size = new System.Drawing.Size(212, 23);
+            this.posButton.TabIndex = 2;
+            this.posButton.Text = "Pos";
+            this.posButton.UseVisualStyleBackColor = true;
+            this.posButton.Click += new System.EventHandler(this.posButton_Click);
             // 
             // bubblePicture
             // 
@@ -130,19 +143,6 @@ namespace WindowsFormsHomework
             this.bubblePicture.Size = new System.Drawing.Size(800, 114);
             this.bubblePicture.TabIndex = 24;
             this.bubblePicture.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button1.Location = new System.Drawing.Point(24, 140);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(212, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "StudentsGrade";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // HomePage
             // 
@@ -170,9 +170,9 @@ namespace WindowsFormsHomework
         private System.Windows.Forms.Button helloButton;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.PictureBox bubblePicture;
-        private System.Windows.Forms.Button PosButton;
-        private System.Windows.Forms.Button Student_StructFormButton;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button posButton;
+        private System.Windows.Forms.Button student_StructFormButton;
+        private System.Windows.Forms.Button studentsGradeButton;
     }
 }
 

@@ -22,17 +22,17 @@ namespace WindowsFormsHomework
             FactoryPanel(new Loan());
         }
 
-        private void PosButton_Click(object sender, EventArgs e)
+        private void posButton_Click(object sender, EventArgs e)
         {
             FactoryPanel(new Pos());
         }
 
-        private void Student_StructFormButton_Click(object sender, EventArgs e)
+        private void student_StructFormButton_Click(object sender, EventArgs e)
         {
             FactoryPanel(new Student_StructForm());
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void studentsGradeButton_Click(object sender, EventArgs e)
         {
             FactoryPanel(new StudentsGrade());
         }

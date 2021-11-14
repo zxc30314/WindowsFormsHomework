@@ -13,7 +13,7 @@ namespace WindowsFormsHomework
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Student_StructForm());
+            Application.Run(new StudentsGrade());
         }
     }
 }
