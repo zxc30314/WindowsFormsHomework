@@ -52,7 +52,7 @@ namespace WindowsFormsHomework
         {
             Keep();
 
-            if (loantrue && limittrue && interesttrue)
+            if (loantrue && limittrue && interesttrue)//呼叫 LoanReport 印出
             {
                 Compute();
                 LoanReport windowsLoanReport = new LoanReport();

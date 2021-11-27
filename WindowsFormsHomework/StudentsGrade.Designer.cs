@@ -38,7 +38,8 @@ namespace WindowsFormsHomework
             this.englishTextBox = new System.Windows.Forms.TextBox();
             this.mathTextBox = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.scoreLabel = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -48,12 +49,14 @@ namespace WindowsFormsHomework
             this.label4 = new System.Windows.Forms.Label();
             this.addButton = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.average = new System.Windows.Forms.Label();
-            this.scoreall = new System.Windows.Forms.Label();
+            this.eachlowestLabel = new System.Windows.Forms.Label();
+            this.eachhightestLabel = new System.Windows.Forms.Label();
+            this.eachaverageLabel = new System.Windows.Forms.Label();
+            this.eachscoreallLabel = new System.Windows.Forms.Label();
             this.randomAddbutton = new System.Windows.Forms.Button();
             this.countButton = new System.Windows.Forms.Button();
             this.resetButton = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.randomAdd20Button = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -138,7 +141,8 @@ namespace WindowsFormsHomework
             // 
             this.panel1.AutoScroll = true;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.label11);
+            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.scoreLabel);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label8);
@@ -151,21 +155,32 @@ namespace WindowsFormsHomework
             this.panel1.Size = new System.Drawing.Size(546, 260);
             this.panel1.TabIndex = 25;
             // 
-            // label11
+            // label12
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label11.Location = new System.Drawing.Point(3, 35);
-            this.label11.Name = "label11";
-            this.label11.Padding = new System.Windows.Forms.Padding(3);
-            this.label11.Size = new System.Drawing.Size(6, 22);
-            this.label11.TabIndex = 32;
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label12.Location = new System.Drawing.Point(400, -2);
+            this.label12.Name = "label12";
+            this.label12.Padding = new System.Windows.Forms.Padding(3);
+            this.label12.Size = new System.Drawing.Size(46, 22);
+            this.label12.TabIndex = 33;
+            this.label12.Text = "最低";
+            // 
+            // scoreLabel
+            // 
+            this.scoreLabel.AutoSize = true;
+            this.scoreLabel.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.scoreLabel.Location = new System.Drawing.Point(3, 35);
+            this.scoreLabel.Name = "scoreLabel";
+            this.scoreLabel.Padding = new System.Windows.Forms.Padding(3);
+            this.scoreLabel.Size = new System.Drawing.Size(6, 22);
+            this.scoreLabel.TabIndex = 32;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label10.Location = new System.Drawing.Point(470, -2);
+            this.label10.Location = new System.Drawing.Point(462, -2);
             this.label10.Name = "label10";
             this.label10.Padding = new System.Windows.Forms.Padding(3);
             this.label10.Size = new System.Drawing.Size(46, 22);
@@ -176,7 +191,7 @@ namespace WindowsFormsHomework
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label9.Location = new System.Drawing.Point(418, -2);
+            this.label9.Location = new System.Drawing.Point(335, -2);
             this.label9.Name = "label9";
             this.label9.Padding = new System.Windows.Forms.Padding(3);
             this.label9.Size = new System.Drawing.Size(46, 22);
@@ -187,7 +202,7 @@ namespace WindowsFormsHomework
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label8.Location = new System.Drawing.Point(366, -2);
+            this.label8.Location = new System.Drawing.Point(283, -2);
             this.label8.Name = "label8";
             this.label8.Padding = new System.Windows.Forms.Padding(3);
             this.label8.Size = new System.Drawing.Size(46, 22);
@@ -198,7 +213,7 @@ namespace WindowsFormsHomework
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label7.Location = new System.Drawing.Point(133, -2);
+            this.label7.Location = new System.Drawing.Point(127, -2);
             this.label7.Name = "label7";
             this.label7.Padding = new System.Windows.Forms.Padding(3);
             this.label7.Size = new System.Drawing.Size(46, 22);
@@ -209,7 +224,7 @@ namespace WindowsFormsHomework
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label6.Location = new System.Drawing.Point(194, -2);
+            this.label6.Location = new System.Drawing.Point(179, -2);
             this.label6.Name = "label6";
             this.label6.Padding = new System.Windows.Forms.Padding(3);
             this.label6.Size = new System.Drawing.Size(46, 22);
@@ -220,7 +235,7 @@ namespace WindowsFormsHomework
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label5.Location = new System.Drawing.Point(255, -2);
+            this.label5.Location = new System.Drawing.Point(231, -2);
             this.label5.Name = "label5";
             this.label5.Padding = new System.Windows.Forms.Padding(3);
             this.label5.Size = new System.Drawing.Size(46, 22);
@@ -254,34 +269,58 @@ namespace WindowsFormsHomework
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.average);
-            this.panel2.Controls.Add(this.scoreall);
+            this.panel2.Controls.Add(this.eachlowestLabel);
+            this.panel2.Controls.Add(this.eachhightestLabel);
+            this.panel2.Controls.Add(this.eachaverageLabel);
+            this.panel2.Controls.Add(this.eachscoreallLabel);
             this.panel2.Location = new System.Drawing.Point(232, 303);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(546, 135);
             this.panel2.TabIndex = 31;
             // 
-            // average
+            // eachlowestLabel
             // 
-            this.average.AutoSize = true;
-            this.average.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.average.Location = new System.Drawing.Point(3, 22);
-            this.average.Name = "average";
-            this.average.Padding = new System.Windows.Forms.Padding(3);
-            this.average.Size = new System.Drawing.Size(46, 22);
-            this.average.TabIndex = 27;
-            this.average.Text = "平均";
+            this.eachlowestLabel.AutoSize = true;
+            this.eachlowestLabel.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.eachlowestLabel.Location = new System.Drawing.Point(3, 66);
+            this.eachlowestLabel.Name = "eachlowestLabel";
+            this.eachlowestLabel.Padding = new System.Windows.Forms.Padding(3);
+            this.eachlowestLabel.Size = new System.Drawing.Size(62, 22);
+            this.eachlowestLabel.TabIndex = 29;
+            this.eachlowestLabel.Text = "最低分";
             // 
-            // scoreall
+            // eachhightestLabel
             // 
-            this.scoreall.AutoSize = true;
-            this.scoreall.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.scoreall.Location = new System.Drawing.Point(3, 0);
-            this.scoreall.Name = "scoreall";
-            this.scoreall.Padding = new System.Windows.Forms.Padding(3);
-            this.scoreall.Size = new System.Drawing.Size(46, 22);
-            this.scoreall.TabIndex = 26;
-            this.scoreall.Text = "總分";
+            this.eachhightestLabel.AutoSize = true;
+            this.eachhightestLabel.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.eachhightestLabel.Location = new System.Drawing.Point(3, 44);
+            this.eachhightestLabel.Name = "eachhightestLabel";
+            this.eachhightestLabel.Padding = new System.Windows.Forms.Padding(3);
+            this.eachhightestLabel.Size = new System.Drawing.Size(62, 22);
+            this.eachhightestLabel.TabIndex = 28;
+            this.eachhightestLabel.Text = "最高分";
+            // 
+            // eachaverageLabel
+            // 
+            this.eachaverageLabel.AutoSize = true;
+            this.eachaverageLabel.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.eachaverageLabel.Location = new System.Drawing.Point(3, 22);
+            this.eachaverageLabel.Name = "eachaverageLabel";
+            this.eachaverageLabel.Padding = new System.Windows.Forms.Padding(3);
+            this.eachaverageLabel.Size = new System.Drawing.Size(46, 22);
+            this.eachaverageLabel.TabIndex = 27;
+            this.eachaverageLabel.Text = "平均";
+            // 
+            // eachscoreallLabel
+            // 
+            this.eachscoreallLabel.AutoSize = true;
+            this.eachscoreallLabel.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.eachscoreallLabel.Location = new System.Drawing.Point(3, 0);
+            this.eachscoreallLabel.Name = "eachscoreallLabel";
+            this.eachscoreallLabel.Padding = new System.Windows.Forms.Padding(3);
+            this.eachscoreallLabel.Size = new System.Drawing.Size(46, 22);
+            this.eachscoreallLabel.TabIndex = 26;
+            this.eachscoreallLabel.Text = "總分";
             // 
             // randomAddbutton
             // 
@@ -300,6 +339,7 @@ namespace WindowsFormsHomework
             // 
             this.countButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.countButton.Enabled = false;
             this.countButton.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.countButton.Location = new System.Drawing.Point(14, 294);
             this.countButton.Name = "countButton";
@@ -322,24 +362,25 @@ namespace WindowsFormsHomework
             this.resetButton.UseVisualStyleBackColor = true;
             this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
             // 
-            // button3
+            // randomAdd20Button
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.randomAdd20Button.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button3.Location = new System.Drawing.Point(14, 405);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(212, 33);
-            this.button3.TabIndex = 35;
-            this.button3.Text = "隨機加入20筆";
-            this.button3.UseVisualStyleBackColor = true;
+            this.randomAdd20Button.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.randomAdd20Button.Location = new System.Drawing.Point(14, 405);
+            this.randomAdd20Button.Name = "randomAdd20Button";
+            this.randomAdd20Button.Size = new System.Drawing.Size(212, 33);
+            this.randomAdd20Button.TabIndex = 35;
+            this.randomAdd20Button.Text = "隨機加入20筆";
+            this.randomAdd20Button.UseVisualStyleBackColor = true;
+            this.randomAdd20Button.Click += new System.EventHandler(this.randomAdd20Button_Click);
             // 
             // StudentsGrade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.randomAdd20Button);
             this.Controls.Add(this.resetButton);
             this.Controls.Add(this.countButton);
             this.Controls.Add(this.randomAddbutton);
@@ -388,9 +429,12 @@ namespace WindowsFormsHomework
         private System.Windows.Forms.Button randomAddbutton;
         private System.Windows.Forms.Button countButton;
         private System.Windows.Forms.Button resetButton;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label scoreall;
-        private System.Windows.Forms.Label average;
+        private System.Windows.Forms.Button randomAdd20Button;
+        private System.Windows.Forms.Label scoreLabel;
+        private System.Windows.Forms.Label eachscoreallLabel;
+        private System.Windows.Forms.Label eachaverageLabel;
+        private System.Windows.Forms.Label eachlowestLabel;
+        private System.Windows.Forms.Label eachhightestLabel;
+        private System.Windows.Forms.Label label12;
     }
 }

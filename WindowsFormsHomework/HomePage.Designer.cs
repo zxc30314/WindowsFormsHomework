@@ -32,10 +32,13 @@ namespace WindowsFormsHomework
             this.loanButton = new System.Windows.Forms.Button();
             this.helloButton = new System.Windows.Forms.Button();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.alarmButton = new System.Windows.Forms.Button();
+            this.guessNumberButton = new System.Windows.Forms.Button();
             this.studentsGradeButton = new System.Windows.Forms.Button();
             this.student_StructFormButton = new System.Windows.Forms.Button();
             this.posButton = new System.Windows.Forms.Button();
             this.bubblePicture = new System.Windows.Forms.PictureBox();
+            this.studentsGradeListButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -79,6 +82,9 @@ namespace WindowsFormsHomework
             this.splitContainer1.Panel1.AutoScroll = true;
             this.splitContainer1.Panel1.BackgroundImage = global::WindowsFormsHomework.Properties.Resources.pngtree_chinese_style_antiquity_ink_background_picture_image_953480;
             this.splitContainer1.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.splitContainer1.Panel1.Controls.Add(this.studentsGradeListButton);
+            this.splitContainer1.Panel1.Controls.Add(this.alarmButton);
+            this.splitContainer1.Panel1.Controls.Add(this.guessNumberButton);
             this.splitContainer1.Panel1.Controls.Add(this.studentsGradeButton);
             this.splitContainer1.Panel1.Controls.Add(this.student_StructFormButton);
             this.splitContainer1.Panel1.Controls.Add(this.posButton);
@@ -94,6 +100,32 @@ namespace WindowsFormsHomework
             this.splitContainer1.SplitterDistance = 253;
             this.splitContainer1.TabIndex = 25;
             // 
+            // alarmButton
+            // 
+            this.alarmButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.alarmButton.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.alarmButton.Location = new System.Drawing.Point(24, 227);
+            this.alarmButton.Name = "alarmButton";
+            this.alarmButton.Size = new System.Drawing.Size(212, 23);
+            this.alarmButton.TabIndex = 6;
+            this.alarmButton.Text = "Alarm";
+            this.alarmButton.UseVisualStyleBackColor = true;
+            this.alarmButton.Click += new System.EventHandler(this.alarmButton_Click);
+            // 
+            // guessNumberButton
+            // 
+            this.guessNumberButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guessNumberButton.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.guessNumberButton.Location = new System.Drawing.Point(24, 198);
+            this.guessNumberButton.Name = "guessNumberButton";
+            this.guessNumberButton.Size = new System.Drawing.Size(212, 23);
+            this.guessNumberButton.TabIndex = 5;
+            this.guessNumberButton.Text = "Guess Number";
+            this.guessNumberButton.UseVisualStyleBackColor = true;
+            this.guessNumberButton.Click += new System.EventHandler(this.guessNumberButton_Click);
+            // 
             // studentsGradeButton
             // 
             this.studentsGradeButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -103,7 +135,7 @@ namespace WindowsFormsHomework
             this.studentsGradeButton.Name = "studentsGradeButton";
             this.studentsGradeButton.Size = new System.Drawing.Size(212, 23);
             this.studentsGradeButton.TabIndex = 4;
-            this.studentsGradeButton.Text = "StudentsGrade";
+            this.studentsGradeButton.Text = "Students Grade";
             this.studentsGradeButton.UseVisualStyleBackColor = true;
             this.studentsGradeButton.Click += new System.EventHandler(this.studentsGradeButton_Click);
             // 
@@ -144,6 +176,19 @@ namespace WindowsFormsHomework
             this.bubblePicture.TabIndex = 24;
             this.bubblePicture.TabStop = false;
             // 
+            // studentsGradeListButton
+            // 
+            this.studentsGradeListButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.studentsGradeListButton.Font = new System.Drawing.Font("新細明體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.studentsGradeListButton.Location = new System.Drawing.Point(24, 169);
+            this.studentsGradeListButton.Name = "studentsGradeListButton";
+            this.studentsGradeListButton.Size = new System.Drawing.Size(212, 23);
+            this.studentsGradeListButton.TabIndex = 7;
+            this.studentsGradeListButton.Text = "Students Grade List";
+            this.studentsGradeListButton.UseVisualStyleBackColor = true;
+            this.studentsGradeListButton.Click += new System.EventHandler(this.studentsGradeListButton_Click);
+            // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -173,6 +218,9 @@ namespace WindowsFormsHomework
         private System.Windows.Forms.Button posButton;
         private System.Windows.Forms.Button student_StructFormButton;
         private System.Windows.Forms.Button studentsGradeButton;
+        private System.Windows.Forms.Button guessNumberButton;
+        private System.Windows.Forms.Button alarmButton;
+        private System.Windows.Forms.Button studentsGradeListButton;
     }
 }
 

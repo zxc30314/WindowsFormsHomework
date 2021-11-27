@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alarm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alarm.Designer.cs">
+      <DependentUpon>Alarm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Guess Number.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guess Number.Designer.cs">
+      <DependentUpon>Guess Number.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputNumber.Designer.cs">
+      <DependentUpon>InputNumber.cs</DependentUpon>
+    </Compile>
     <Compile Include="Loan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +96,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudentsGrade_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentsGrade_List.Designer.cs">
+      <DependentUpon>StudentsGrade_List.cs</DependentUpon>
+    </Compile>
     <Compile Include="StudentsGrade.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +114,15 @@
     <Compile Include="Student_StructForm.Designer.cs">
       <DependentUpon>Student_StructForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Alarm.resx">
+      <DependentUpon>Alarm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guess Number.resx">
+      <DependentUpon>Guess Number.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputNumber.resx">
+      <DependentUpon>InputNumber.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Loan.resx">
       <DependentUpon>Loan.cs</DependentUpon>
     </EmbeddedResource>
@@ -115,6 +148,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="StudentsGrade_List.resx">
+      <DependentUpon>StudentsGrade_List.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StudentsGrade.resx">
       <DependentUpon>StudentsGrade.cs</DependentUpon>
     </EmbeddedResource>

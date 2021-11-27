@@ -23,6 +23,8 @@ namespace WindowsFormsHomework
 
         private void keepButton_Click(object sender, EventArgs e)
         {
+            dict.Clear();
+
             student.name = nameTextBox.Text;
             int.TryParse(chineseTextBox.Text, out student.chinesescore);
             int.TryParse(englishTextBox.Text, out student.englishscore);
@@ -35,7 +37,7 @@ namespace WindowsFormsHomework
 
         private void displayButton_Click(object sender, EventArgs e)
         {
-            nameLabel.Text = student.name;
+            nameLabel.Text = "姓名：" + student.name;
             chineseScoreLabel.Text = "國語：" + student.chinesescore + "分";
             englishScoreLabel.Text = "英文：" + student.englishscore + "分";
             mathScoreLabel.Text = "數學：" + student.mathscore + "分";
@@ -43,33 +45,39 @@ namespace WindowsFormsHomework
 
         private void highestLowestButton_Click(object sender, EventArgs e)
         {
-            int maxscore = 0;
-            int maxvalue = 0;
-            highestLabel.Text = "最高科目成績為：";
-
-            string maxkey = dict.FirstOrDefault(x => x.Value == dict.Values.Max()).Key;
-            dict.TryGetValue(maxkey, out maxscore);
-            highestLabel.Text += maxkey;
-            dict.Remove(maxkey);
-            maxvalue = dict.FirstOrDefault(x => x.Value == dict.Values.Max()).Value;
-
-            while (maxvalue == maxscore)
-            {
-                maxkey = dict.FirstOrDefault(x => x.Value == dict.Values.Max()).Key;
-                highestLabel.Text += "," + maxkey;
-                dict.Remove(maxkey);
-                maxvalue = dict.FirstOrDefault(x => x.Value == dict.Values.Max()).Value;
-            }
-
-            highestLabel.Text += $"{"  "}{maxscore} 分";
-
-            int minscore;
-            int minvalue;
-            lowestLabel.Text = "最低科目成績為：";
             try
             {
+                int maxscore = 0;
+                int maxvalue = 0;
+                highestLabel.Text = "最高科目成績為：";
+
+                string maxkey = dict.FirstOrDefault(x => x.Value == dict.Values.Max()).Key;
+                dict.TryGetValue(maxkey, out maxscore);
+
+                if (maxscore != 0)
+                {
+                    highestLabel.Text += maxkey;
+                    dict.Remove(maxkey);
+                    maxvalue = dict.FirstOrDefault(x => x.Value == dict.Values.Max()).Value;
+
+                    while (maxvalue == maxscore)
+                    {
+                        maxkey = dict.FirstOrDefault(x => x.Value == dict.Values.Max()).Key;
+                        highestLabel.Text += "," + maxkey;
+                        dict.Remove(maxkey);
+                        maxvalue = dict.FirstOrDefault(x => x.Value == dict.Values.Max()).Value;
+                    }
+
+                    highestLabel.Text += $"{"  "}{maxscore} 分";
+                }
+
+                int minscore;
+                int minvalue;
+                lowestLabel.Text = "最低科目成績為：";
+
                 string minkey = dict.FirstOrDefault(x => x.Value == dict.Values.Min()).Key;
                 dict.TryGetValue(minkey, out minscore);
+
                 lowestLabel.Text += minkey;
                 dict.Remove(minkey);
                 minvalue = dict.FirstOrDefault(x => x.Value == dict.Values.Min()).Value;
@@ -84,11 +92,7 @@ namespace WindowsFormsHomework
 
                 lowestLabel.Text += $"{"  "}{minscore} 分";
             }
-
-            catch
-            {
-
-            }
+            catch { }
         }
     }
 
@@ -100,4 +104,3 @@ namespace WindowsFormsHomework
         public int mathscore;
     }
 }
-

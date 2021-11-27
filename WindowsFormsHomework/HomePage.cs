@@ -36,6 +36,22 @@ namespace WindowsFormsHomework
         {
             FactoryPanel(new StudentsGrade());
         }
+        private void studentsGradeListButton_Click(object sender, EventArgs e)
+        {
+            FactoryPanel(new StudentsGrade_List());
+
+        }
+
+        private void guessNumberButton_Click(object sender, EventArgs e)
+        {
+            FactoryPanel(new Guess_Number());
+
+        }
+
+        private void alarmButton_Click(object sender, EventArgs e)
+        {
+            FactoryPanel(new Alarm());
+        }
 
         private void FactoryPanel(IPanel panel)
         {

@@ -34,29 +34,6 @@ namespace WindowsFormsHomework
             listLabel.Text = wineShow + tequilaShow + whiskyShow + beerShow;
         }
 
-        /*private void list()
-        {
-
-            if (listBox1.Items.IndexOf(wineShow) == -1)
-            {
-                wine.count++;
-                wine.price = wine.count * wine.unitprice;
-                wineShow = "紅酒x" + wine.count + "," + "共NT$" + wine.price + "元" + "\n";
-                listBox1.Items.Add(wineShow);
-            }
-
-
-            else if (listBox1.Items.IndexOf(wineShow) != -1)
-            {
-                int index = listBox1.Items.IndexOf(wineShow);
-                wine.count++;
-                wine.price = wine.count * wine.unitprice;
-                wineShow = "紅酒x" + wine.count + "," + "共NT$" + wine.price + "元" + "\n";
-                listBox1.Items.Insert(index, wineShow);
-                listBox1.Items.RemoveAt(index + 1);
-            }
-        }*/
-
         private void tequilaButton_Click(object sender, EventArgs e)
         {
             Tequila.count++;
